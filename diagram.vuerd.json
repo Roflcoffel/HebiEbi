@@ -1,0 +1,581 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -83,
+    "scrollLeft": -63,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "User",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e7b315cc-ded4-4c4b-8002-717a26bf2ec2"
+          },
+          {
+            "name": "username",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.77604675292969,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "401d66b1-d30f-46d3-81a1-51fb3f9039d1"
+          },
+          {
+            "name": "level",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "23e3a454-5694-4169-99ab-71a03db8c7a0"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 177,
+          "top": 248,
+          "zIndex": 259,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9a7f18cf-980a-4590-83ec-57494eb410d7"
+      },
+      {
+        "name": "Lesson",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "450f820a-595a-4604-9a0b-f44d334a334a"
+          },
+          {
+            "name": "description",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.45806884765625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "16feac6f-d2a4-40dc-ab1a-ea353899f127"
+          },
+          {
+            "name": "level_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2de11bf7-4500-4732-a341-26366db19eab"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 412,
+          "top": 635,
+          "zIndex": 258,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "78f2f789-323b-4112-8ea7-944389a929e9"
+      },
+      {
+        "name": "Character",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fa72bc5d-37ce-4841-87e7-121f39507449"
+          },
+          {
+            "name": "symbol",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3d64e178-9745-4136-bfbf-02afb8c3c379"
+          },
+          {
+            "name": "description",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.45806884765625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1dbd082d-86cc-4da3-bddf-625bbf3a9472"
+          },
+          {
+            "name": "lesson_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8cff68dd-c099-4794-a23b-5e8cfd5be215"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 925,
+          "top": 557,
+          "zIndex": 257,
+          "widthName": 61.57904052734375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3de9a015-7f61-4864-8a03-0d832b9c3bcd"
+      },
+      {
+        "name": "Word",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9ab0b85b-a672-4c29-b93a-8cfd0ef40574"
+          },
+          {
+            "name": "word",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2f43a49e-663f-418a-9231-1901e4c25724"
+          },
+          {
+            "name": "description",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 70.45806884765625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "157c5653-8c5e-40f3-a780-e3e25d519d5d"
+          },
+          {
+            "name": "lesson_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ec68694f-f55d-4269-9b28-96634534ee12"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 933,
+          "top": 719,
+          "zIndex": 256,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "cfc2cbf7-e30a-4275-ab56-5a3895b47c5a"
+      },
+      {
+        "name": "Level",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1f9e9295-f82e-470a-b7db-ecae96224d14"
+          },
+          {
+            "name": "",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e55f66fa-f888-4a09-8ddc-ce530229ff57"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 417,
+          "top": 418,
+          "zIndex": 248,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "58ab88b1-c0b7-4d97-9b6f-08bd52bdf560"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "58ab88b1-c0b7-4d97-9b6f-08bd52bdf560",
+          "columnIds": [
+            "1f9e9295-f82e-470a-b7db-ecae96224d14"
+          ],
+          "x": 590.5,
+          "y": 528,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "78f2f789-323b-4112-8ea7-944389a929e9",
+          "columnIds": [
+            "2de11bf7-4500-4732-a341-26366db19eab"
+          ],
+          "x": 590.7290344238281,
+          "y": 635,
+          "direction": "top"
+        },
+        "constraintName": "fk_level_to_lesson",
+        "visible": true,
+        "id": "b6aad874-2541-4be5-9fa4-a956ebaee993"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "78f2f789-323b-4112-8ea7-944389a929e9",
+          "columnIds": [
+            "450f820a-595a-4604-9a0b-f44d334a334a"
+          ],
+          "x": 769.4580688476562,
+          "y": 667.625,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "3de9a015-7f61-4864-8a03-0d832b9c3bcd",
+          "columnIds": [
+            "8cff68dd-c099-4794-a23b-5e8cfd5be215"
+          ],
+          "x": 925,
+          "y": 632.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_lesson_to_character",
+        "visible": true,
+        "id": "8c144ea8-1515-47aa-a650-bd71e98916fb"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "78f2f789-323b-4112-8ea7-944389a929e9",
+          "columnIds": [
+            "450f820a-595a-4604-9a0b-f44d334a334a"
+          ],
+          "x": 769.4580688476562,
+          "y": 732.875,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "cfc2cbf7-e30a-4275-ab56-5a3895b47c5a",
+          "columnIds": [
+            "ec68694f-f55d-4269-9b28-96634534ee12"
+          ],
+          "x": 933,
+          "y": 794.5,
+          "direction": "left"
+        },
+        "constraintName": "fk_lesson_to_word",
+        "visible": true,
+        "id": "d36ca261-4f04-4cd6-a0e9-081981e6c662"
+      }
+    ]
+  }
+}
